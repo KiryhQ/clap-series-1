@@ -19,13 +19,23 @@ function funnyArray(ary) {
     return Math.abs(n % 2) == 1;
  };
 
- if (isEven(ary.length)){
-    return ary[1] + ary[2];
- } else if (isOdd(ary.length)){
-   return ary[1];
- } else if (ary.length = 0) {
-   return "rien";
- }
+ if (ary.length < 1 ){
+
+  return "rien";
+
+} else if ( isEven(ary.length)){
+
+  return ary[1] + ary[2];
+
+} else if (isOdd(ary.length)){
+
+ return ary[1];
+
+} else {
+
+ return "rien";
+
+}
 }
 
 export { funnyArray };

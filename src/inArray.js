@@ -6,7 +6,11 @@
  * ary = ["2d", "5s", "Ah"] val = "2h" alors inArray(ary, val) retournera false
  */
 function inArray(ary, val) {
-  // CODE HERE
+  if( ary.includes(val)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 export { inArray };
