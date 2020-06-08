@@ -11,7 +11,21 @@
  * - Si le tableau est vide, je retourne le mot 'rien'
  */
 function funnyArray(ary) {
-  // CODE HERE
+  function isEven(n) {
+    return n % 2 == 0;
+ };
+ 
+ function isOdd(n) {
+    return Math.abs(n % 2) == 1;
+ };
+
+ if (isEven(ary.length)){
+    return ary[1] + ary[2];
+ } else if (isOdd(ary.length)){
+   return ary[1];
+ } else if (ary.length = 0) {
+   return "rien";
+ }
 }
 
 export { funnyArray };
