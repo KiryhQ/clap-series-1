@@ -12,6 +12,17 @@
  */
 function dealer() {
   // CODE HERE
+
+  $firstArray = [];
+  $secondArray = [];
+
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random(min) * Math.floor(max));
+  }
+
+  $eachCardValue=getRandomInt(2, 10);
+  $eachCardSymbol=getRandomInt(1, 4);
+  
 }
 
 export { dealer };
