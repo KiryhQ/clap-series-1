@@ -9,7 +9,6 @@
  */
 
 function increment(number) {
-  // CODE HERE
+  return typeof(number) == 'number' ? number + 1 : `${number} doit être un nombre !`;
 }
-
 export { increment };
